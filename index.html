@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de textos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="accets/cifrado-de-datos.png" type="image/x-icon"></a>
+</head>
+
+<body>
+    <header>
+        <img src="accets/Logo.png" alt="logo alura">
+    </header>
+    <main>
+        <form class="form__section">
+           <label for="mensaje">Ingrese el texto aquí:</label>
+            <textarea class="form__input" name="mensaje" cols="30" rows="10"
+                placeholder="Ingrese  el texto aquí"></textarea>
+            <div class="btn__container">
+                <div class="alert__msj"><img src="accets/bi_exclamation-circle-fill.png" alt="alert icon"><span>Solo letras
+                        minúsculas y sin acentos</span></div>
+            </div>
+            <div class="submit__container">
+                <input  class="form__btn" type="submit" value="Encriptar!">
+                <input  class="form__btn form__btn--secundary" type="submit" value="Desencriptar!">
+            </div>
+        </form>
+        <aside class="result">
+            <img src="accets/Muñeco.png" alt="imagen de monito" class="result__img">
+            <div class="loader hidden"></div>
+            <div class="result__container">
+                <h3 class="result__title">Ningún mensaje fue encontrado</h3>
+                <p class="result__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="result__btn form__btn form__btn--secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+
+<footer>
+  <p>Desarrollado por Esteban Lopez</p>
+</footer>
+
+</html>
